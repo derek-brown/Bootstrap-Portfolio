@@ -58,23 +58,20 @@ p, a{
     margin: 0;
 }
 .image{
-    text-align: center;
-}
-.img-responsive{
-    margin: 0 auto;
-    display: inline;
-    padding: 5px;
+    margin: 10px auto;
 }
 .image-portfolio{
-    width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
 }
-.image1, .image2,
-.image3, .image4,
-.image5{
-    width: 25%;
+.image-p{
+    margin: 20px auto;
+    flex: 0 35%;
+
 }
+.img-github, .img-linkedin, .img-stack,{
+    flex-wrap: wrap;
+    width: 33.33%;
 }
 .content p{
     font-size: 18px;
@@ -94,15 +91,16 @@ p, a{
 }
 .links{
     padding: 20px 0;
-
 }
 .links li{
-    display: inline;
+    display: inline-flex;
+    padding: 5px;
 }
 ul{
     padding: 0;
     margin: 0;
 }
+
 /* End edit for Main */
 
 /* Begin edit for Footer */
@@ -143,65 +141,12 @@ ul{
 
 
 /*begin media queries */
-
-@media screen and (max-width: 640px){
-    .main{
-        width: 90%;
-    }
-    .main-content{
-        margin: 20px 0 20px 0;
-        width: 100%;
-    }
-    .connect{
-        margin: 0 0 20px 0;
-        width: 100%;
-    }
-    .links, .connect-title{
-        text-align: left;
-    }
-    .links{
-        margin: 0 35px;
-    }
-    .image{
-        float: none;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 991px){
     .main{
         display: block;
         overflow: auto;
     }
     .main-content, .connect{
         margin: 20px 0;
-        width: 100%;
     }
-    .links, .connect-title{
-        text-align: left;
-    }
-    .links{
-        margin: 0 35px;
-    }
-    .image{
-        float: none;
-        text-align: center;
-    }
-}
-@media screen and (min-width: 769px){
-    .image{
-        float: none;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-    .links ul{
-        display: inline-flex;
-    }
-    .img-github, .img-linkedin, .img-stack,{
-        flex-wrap: wrap;
-        width: 33.33%;
-    }
-
 }
